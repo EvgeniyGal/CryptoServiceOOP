@@ -88,12 +88,6 @@ cmake-build-*/
 # Mongo Explorer plugin
 .idea/**/mongoSettings.xml
 
-# File-based project format
-*.iws
-
-# IntelliJ
-out/
-
 # mpeltonen/sbt-idea plugin
 .idea_modules/
 
@@ -119,7 +113,7 @@ fabric.properties
 .idea/caches/build_file_checksums.ser
 
 ### Gradle template
-.gradle
+
 **/build/
 !src/**/build/
 
@@ -136,8 +130,5 @@ gradle-app.setting
 .gradletasknamecache
 
 # Eclipse Gradle plugin generated files
-# Eclipse Core
-.project
-# JDT-specific (Eclipse Java Development Tools)
-.classpath
+
 
