@@ -6,7 +6,7 @@ import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
 
-public class CsvTimestampConverter extends AbstractBeanField {
+public class CsvTimestampConverter extends AbstractBeanField<LocalDateTime,Integer> {
 
     @Override
     protected Object convert(String value) {

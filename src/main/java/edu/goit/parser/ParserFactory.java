@@ -1,7 +1,6 @@
 package edu.goit.parser;
 
 import lombok.SneakyThrows;
-import org.checkerframework.checker.units.qual.C;
 import org.reflections.Reflections;
 import org.reflections.scanners.Scanners;
 

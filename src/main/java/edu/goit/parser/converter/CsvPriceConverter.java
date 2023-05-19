@@ -1,12 +1,10 @@
 package edu.goit.parser.converter;
 
 import com.opencsv.bean.AbstractBeanField;
-import com.opencsv.exceptions.CsvConstraintViolationException;
-import com.opencsv.exceptions.CsvDataTypeMismatchException;
 
-public class CsvPriceConverter extends AbstractBeanField {
+public class CsvPriceConverter extends AbstractBeanField<Double, Integer> {
     @Override
-    protected Object convert(String value) throws CsvDataTypeMismatchException, CsvConstraintViolationException {
+    protected Double convert(String value) {
         return Double.valueOf(value);
     }
 }

@@ -22,13 +22,12 @@ public class CsvParser<T> extends Parser<T>{
     public List<T> parse(InputStream inputStream) {
         try (Reader reader = new BufferedReader(new InputStreamReader(inputStream))){
             return new CsvToBeanBuilder<T>(reader).withType(modelClass).build().parse();
-
         }
     }
 
     @Override
     protected String getExtension() {
-
         return EXTENSION;
     }
+
 }
